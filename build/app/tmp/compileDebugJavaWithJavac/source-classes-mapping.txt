@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/kamireis/local_notification_awesome/BuildConfig.java
+ com.kamireis.local_notification_awesome.BuildConfig

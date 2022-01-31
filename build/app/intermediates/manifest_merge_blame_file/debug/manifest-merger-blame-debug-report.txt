@@ -1,0 +1,419 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.kamireis.local_notification_awesome"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/kamilareis/GitHub/local_notification_awesome/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/kamilareis/GitHub/local_notification_awesome/android/app/src/debug/AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-68
+15-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-65
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Samsung Badge -->
+16-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-79
+16-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-76
+17    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+17-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-86
+17-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-83
+18    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- Sony Badge -->
+18-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-87
+18-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-84
+19    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" /> <!-- HTC Badge -->
+19-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-88
+19-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-85
+20    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+20-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-81
+20-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-78
+21    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+21-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-83
+21-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:16:22-80
+22    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+22-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:17:5-81
+22-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:17:22-78
+23    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+23-->[com.google.firebase:firebase-messaging:23.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/6da14bb0ec3ddae145f4f0e8730f2e69/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:5-82
+23-->[com.google.firebase:firebase-messaging:23.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/6da14bb0ec3ddae145f4f0e8730f2e69/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:22-79
+24    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Include required permissions for Advertising Id -->
+24-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5cdc1518fd07ef4eaf1f49340c12910f/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:26:5-110
+24-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5cdc1518fd07ef4eaf1f49340c12910f/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:26:22-107
+25    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+25-->[com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/f42ec219aa64da1caa9dc024862b80af/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml:23:5-79
+25-->[com.google.android.gms:play-services-ads-identifier:18.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/f42ec219aa64da1caa9dc024862b80af/jetified-play-services-ads-identifier-18.0.0/AndroidManifest.xml:23:22-76
+26    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+26-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+26-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+27    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+27-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+27-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+28    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+28-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+28-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+29    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+29-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+29-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+30    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+30-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+30-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+31    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+31-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+31-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+32    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+32-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+32-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+33    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+33-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+33-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+34    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+34-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+34-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+35    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+35-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+35-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+36    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+36-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+36-->[me.leolin:ShortcutBadger:1.1.22] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/e373d76ba8c558ce830821e6427d8ab3/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+37
+38    <application
+39        android:name="android.app.Application"
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.6.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/eb8d9937f7d1dda95540b9e161ea9375/core-1.6.0/AndroidManifest.xml:24:18-86
+41        android:debuggable="true"
+42        android:icon="@mipmap/ic_launcher"
+43        android:label="local_notification_awesome" >
+44        <activity
+45            android:name="com.kamireis.local_notification_awesome.MainActivity"
+46            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+47            android:hardwareAccelerated="true"
+48            android:launchMode="singleTop"
+49            android:theme="@style/LaunchTheme"
+50            android:windowSoftInputMode="adjustResize" >
+51
+52            <!--
+53                 Specifies an Android theme to apply to this Activity as soon as
+54                 the Android process has started. This theme is visible to the user
+55                 while the Flutter UI initializes. After that, this theme continues
+56                 to determine the Window background behind the Flutter UI.
+57            -->
+58            <meta-data
+59                android:name="io.flutter.embedding.android.NormalTheme"
+60                android:resource="@style/NormalTheme" />
+61
+62            <intent-filter>
+63                <action android:name="android.intent.action.MAIN" />
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+66
+67                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+68
+69                <category android:name="android.intent.category.DEFAULT" />
+69-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:48:17-76
+69-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:48:27-73
+70            </intent-filter>
+71        </activity>
+72        <!--
+73             Don't delete the meta-data below.
+74             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+75        -->
+76        <meta-data
+77            android:name="flutterEmbedding"
+78            android:value="2" />
+79
+80        <service
+80-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:72
+81            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+81-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-107
+82            android:exported="false"
+82-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+83            android:permission="android.permission.BIND_JOB_SERVICE" />
+83-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-69
+84        <service
+84-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-22:19
+85            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+85-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-97
+86            android:exported="false" >
+86-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+87            <intent-filter>
+87-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+88                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+88-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+88-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+89            </intent-filter>
+90        </service>
+91
+92        <receiver
+92-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:24:9-31:20
+93            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+93-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-98
+94            android:exported="true"
+94-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-36
+95            android:permission="com.google.android.c2dm.permission.SEND" >
+95-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-73
+96            <intent-filter>
+96-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+97                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+97-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+97-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+98            </intent-filter>
+99        </receiver>
+100
+101        <service
+101-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:9-37:19
+102            android:name="com.google.firebase.components.ComponentDiscoveryService"
+102-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:18-89
+103            android:directBootAware="true"
+103-->[com.google.firebase:firebase-common:20.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/03c3d504b56bff883510361cdf036459/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+104            android:exported="false" >
+104-->[com.google.firebase:firebase-messaging:23.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/6da14bb0ec3ddae145f4f0e8730f2e69/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:51:13-37
+105            <meta-data
+105-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36:85
+106                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+106-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:35:17-128
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:36:17-82
+108            <meta-data
+108-->[:firebase_core] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+109                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+109-->[:firebase_core] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[:firebase_core] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+111            <meta-data
+111-->[com.google.firebase:firebase-messaging:23.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/6da14bb0ec3ddae145f4f0e8730f2e69/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:52:13-54:85
+112                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+112-->[com.google.firebase:firebase-messaging:23.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/6da14bb0ec3ddae145f4f0e8730f2e69/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:53:17-119
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[com.google.firebase:firebase-messaging:23.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/6da14bb0ec3ddae145f4f0e8730f2e69/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:54:17-82
+114            <meta-data
+114-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/daac6cbe70668b554c7aa047b307ff67/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+115                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+115-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/daac6cbe70668b554c7aa047b307ff67/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/daac6cbe70668b554c7aa047b307ff67/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+117            <meta-data
+117-->[com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/7dd5407c0d616e0932c7ba2ec6b5c2b0/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:30:13-32:85
+118                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+118-->[com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/7dd5407c0d616e0932c7ba2ec6b5c2b0/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:31:17-139
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.android.gms:play-services-measurement-api:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/7dd5407c0d616e0932c7ba2ec6b5c2b0/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:32:17-82
+120            <meta-data
+120-->[com.google.firebase:firebase-installations:17.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/73d2c3667932f7669e2c98fcdf968630/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+121                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+121-->[com.google.firebase:firebase-installations:17.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/73d2c3667932f7669e2c98fcdf968630/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-installations:17.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/73d2c3667932f7669e2c98fcdf968630/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+123        </service>
+124
+125        <provider
+125-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:39:9-43:38
+126            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+126-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-102
+127            android:authorities="com.kamireis.local_notification_awesome.flutterfirebasemessaginginitprovider"
+127-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-88
+128            android:exported="false"
+128-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-37
+129            android:initOrder="99" />
+129-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:43:13-35
+130        <!--
+131        <service
+132            android:name=".services.firebase.FCMService"
+133            android:exported="false">
+134            <intent-filter>
+135                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+136            </intent-filter>
+137        </service>
+138
+139        <service
+140            android:name=".services.AutoCancelService"
+141            android:stopWithTask="true" />
+142
+143        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="true" />
+144
+145        <meta-data
+146            android:name="com.google.firebase.messaging.default_notification_channel_id"
+147            android:value="me.carda.awesome_notifications.firebase.background_channel"/>
+148        -->
+149        <receiver android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.DismissedNotificationReceiver" />
+149-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:41:9-130
+149-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:41:19-127
+150        <receiver android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.ScheduledNotificationReceiver" />
+150-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:42:9-130
+150-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:42:19-127
+151        <receiver android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.KeepOnTopActionReceiver" />
+151-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:43:9-124
+151-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:43:19-121
+152        <receiver
+152-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:44:9-56:20
+153            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.RefreshNotificationBootReceiver"
+153-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:45:13-123
+154            android:exported="false" >
+154-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:46:13-37
+155            <intent-filter>
+155-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:47:13-55:29
+156                <category android:name="android.intent.category.DEFAULT" />
+156-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:48:17-76
+156-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:48:27-73
+157
+158                <action android:name="android.intent.action.BOOT_COMPLETED" />
+158-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:50:17-79
+158-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:50:25-76
+159                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+159-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:51:17-86
+159-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:51:25-83
+160                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+160-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:52:17-84
+160-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:52:25-81
+161                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+161-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:53:17-82
+161-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:53:25-79
+162                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+162-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:54:17-82
+162-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:54:25-79
+163            </intent-filter>
+164        </receiver>
+165        <receiver
+165-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:57:9-63:20
+166            android:name="androidx.media.session.MediaButtonReceiver"
+166-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:58:13-70
+167            android:exported="false" >
+167-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:59:13-37
+168            <intent-filter>
+168-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:60:13-62:29
+169                <action android:name="android.intent.action.MEDIA_BUTTON" />
+169-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:61:17-77
+169-->[:awesome_notifications] /Users/kamilareis/GitHub/local_notification_awesome/build/awesome_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:61:25-74
+170            </intent-filter>
+171        </receiver>
+172        <receiver
+172-->[com.google.firebase:firebase-messaging:23.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/6da14bb0ec3ddae145f4f0e8730f2e69/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:28:9-35:20
+173            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+173-->[com.google.firebase:firebase-messaging:23.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/6da14bb0ec3ddae145f4f0e8730f2e69/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:29:13-78
+174            android:exported="true"
+174-->[com.google.firebase:firebase-messaging:23.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/6da14bb0ec3ddae145f4f0e8730f2e69/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:30:13-36
+175            android:permission="com.google.android.c2dm.permission.SEND" >
+175-->[com.google.firebase:firebase-messaging:23.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/6da14bb0ec3ddae145f4f0e8730f2e69/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:31:13-73
+176            <intent-filter>
+176-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+177                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+177-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+177-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+178            </intent-filter>
+179        </receiver>
+180        <!--
+181             FirebaseMessagingService performs security checks at runtime,
+182             but set to not exported to explicitly avoid allowing another app to call it.
+183        -->
+184        <service
+184-->[com.google.firebase:firebase-messaging:23.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/6da14bb0ec3ddae145f4f0e8730f2e69/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:41:9-48:19
+185            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+185-->[com.google.firebase:firebase-messaging:23.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/6da14bb0ec3ddae145f4f0e8730f2e69/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:42:13-82
+186            android:directBootAware="true"
+186-->[com.google.firebase:firebase-messaging:23.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/6da14bb0ec3ddae145f4f0e8730f2e69/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:43:13-43
+187            android:exported="false" >
+187-->[com.google.firebase:firebase-messaging:23.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/6da14bb0ec3ddae145f4f0e8730f2e69/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:44:13-37
+188            <intent-filter android:priority="-500" >
+188-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+189                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+189-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+189-->[:firebase_messaging] /Users/kamilareis/GitHub/local_notification_awesome/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+190            </intent-filter>
+191        </service>
+192        <service
+192-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/f25225f95e7f3e1ee91ec158c713761b/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+193            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+193-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/f25225f95e7f3e1ee91ec158c713761b/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+194            android:exported="false" >
+194-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/f25225f95e7f3e1ee91ec158c713761b/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+195            <meta-data
+195-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/f25225f95e7f3e1ee91ec158c713761b/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+196                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+196-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/f25225f95e7f3e1ee91ec158c713761b/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+197                android:value="cct" />
+197-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/f25225f95e7f3e1ee91ec158c713761b/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+198        </service>
+199
+200        <provider
+200-->[com.google.firebase:firebase-common:20.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/03c3d504b56bff883510361cdf036459/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+201            android:name="com.google.firebase.provider.FirebaseInitProvider"
+201-->[com.google.firebase:firebase-common:20.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/03c3d504b56bff883510361cdf036459/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+202            android:authorities="com.kamireis.local_notification_awesome.firebaseinitprovider"
+202-->[com.google.firebase:firebase-common:20.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/03c3d504b56bff883510361cdf036459/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+203            android:directBootAware="true"
+203-->[com.google.firebase:firebase-common:20.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/03c3d504b56bff883510361cdf036459/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+204            android:exported="false"
+204-->[com.google.firebase:firebase-common:20.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/03c3d504b56bff883510361cdf036459/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+205            android:initOrder="100" />
+205-->[com.google.firebase:firebase-common:20.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/03c3d504b56bff883510361cdf036459/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+206
+207        <receiver
+207-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5cdc1518fd07ef4eaf1f49340c12910f/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:29:9-33:20
+208            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+208-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5cdc1518fd07ef4eaf1f49340c12910f/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:30:13-85
+209            android:enabled="true"
+209-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5cdc1518fd07ef4eaf1f49340c12910f/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:31:13-35
+210            android:exported="false" >
+210-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5cdc1518fd07ef4eaf1f49340c12910f/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:32:13-37
+211        </receiver>
+212
+213        <service
+213-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5cdc1518fd07ef4eaf1f49340c12910f/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:35:9-38:40
+214            android:name="com.google.android.gms.measurement.AppMeasurementService"
+214-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5cdc1518fd07ef4eaf1f49340c12910f/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:36:13-84
+215            android:enabled="true"
+215-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5cdc1518fd07ef4eaf1f49340c12910f/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:37:13-35
+216            android:exported="false" />
+216-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5cdc1518fd07ef4eaf1f49340c12910f/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:38:13-37
+217        <service
+217-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5cdc1518fd07ef4eaf1f49340c12910f/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:39:9-43:72
+218            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+218-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5cdc1518fd07ef4eaf1f49340c12910f/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:40:13-87
+219            android:enabled="true"
+219-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5cdc1518fd07ef4eaf1f49340c12910f/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:41:13-35
+220            android:exported="false"
+220-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5cdc1518fd07ef4eaf1f49340c12910f/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:42:13-37
+221            android:permission="android.permission.BIND_JOB_SERVICE" />
+221-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5cdc1518fd07ef4eaf1f49340c12910f/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:43:13-69
+222
+223        <meta-data
+223-->[com.google.android.gms:play-services-basement:18.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/57fd8e1d7bc2c4056398e541a1301e41/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+224            android:name="com.google.android.gms.version"
+224-->[com.google.android.gms:play-services-basement:18.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/57fd8e1d7bc2c4056398e541a1301e41/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+225            android:value="@integer/google_play_services_version" />
+225-->[com.google.android.gms:play-services-basement:18.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/57fd8e1d7bc2c4056398e541a1301e41/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+226
+227        <provider
+227-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/1b5c93ff8560558555b17dc2beeb3ea9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+228            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+228-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/1b5c93ff8560558555b17dc2beeb3ea9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+229            android:authorities="com.kamireis.local_notification_awesome.lifecycle-process"
+229-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/1b5c93ff8560558555b17dc2beeb3ea9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+230            android:exported="false"
+230-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/1b5c93ff8560558555b17dc2beeb3ea9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+231            android:multiprocess="true" />
+231-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/1b5c93ff8560558555b17dc2beeb3ea9/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+232
+233        <service
+233-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5fcac97fc7483cfef43f813b10f070ae/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+234            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+234-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5fcac97fc7483cfef43f813b10f070ae/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+235            android:exported="false"
+235-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5fcac97fc7483cfef43f813b10f070ae/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+236            android:permission="android.permission.BIND_JOB_SERVICE" >
+236-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5fcac97fc7483cfef43f813b10f070ae/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+237        </service>
+238
+239        <receiver
+239-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5fcac97fc7483cfef43f813b10f070ae/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+240            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+240-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5fcac97fc7483cfef43f813b10f070ae/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+241            android:exported="false" />
+241-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/kamilareis/.gradle/caches/transforms-2/files-2.1/5fcac97fc7483cfef43f813b10f070ae/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+242    </application>
+243
+244</manifest>
