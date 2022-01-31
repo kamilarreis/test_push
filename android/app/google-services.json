@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "961911729296",
+    "project_id": "teste-push-awesome",
+    "storage_bucket": "teste-push-awesome.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961911729296:android:7930ad097e6e48ea71fc15",
+        "android_client_info": {
+          "package_name": "com.kamireis.local_notification_awesome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961911729296-0hhvjk2a5f7crkju0fb5eb35a237j01b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjT9Oj1e4vGzxRhqlZ6tWY3DRY9QNYKN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961911729296-0hhvjk2a5f7crkju0fb5eb35a237j01b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
